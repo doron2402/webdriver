@@ -1,0 +1,4 @@
+- `npm i`
+- Download chromedriver and cp it to your `usr/local`
+- running the wiki test: `node wiki.js`
+- running the google search test : `node googleSearch.js`
