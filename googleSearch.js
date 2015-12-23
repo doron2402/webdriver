@@ -2,7 +2,13 @@
 "use strict";
 
 var webdriver = require('selenium-webdriver');
-var browser = new webdriver.Builder().usingServer().withCapabilities({'browserName': 'chrome' }).build();
+// var browser = new webdriver.Builder()
+//  .usingServer('http://selenium-hub.pp-uswest2.otenv.com/wd/hub')
+//  .withCapabilities({'browserName': 'firefox' }).build();
+var browser = new webdriver.Builder()
+.usingServer('http://selenium-hub.pp-uswest2.otenv.com/wd/hub')
+.withCapabilities({'browserName': 'chrome' })
+.build();
 
 function logTitle() {
   browser.getTitle().then(function(title) {
